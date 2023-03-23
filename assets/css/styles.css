@@ -138,47 +138,6 @@ ul {
   height: 4px;
   margin: 6px auto;
 }
-
-/* Dark theme switcher*/
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
-
-.label {
-  width: 50px;
-  height: 29px;
-  background-color: #111;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 30px;
-  padding: 6px;
-  position: relative;
-}
-
-.switcher {
-  background-color: #fff;
-  position: absolute;
-  top: 5px;
-  left: 2px;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-}
-
-.moon {
-  color: #ffa502;
-}
-
-.sun {
-  color: #ff4757;
-}
-
-.checkbox:checked + .label .switcher {
-  transform: translateX(24px);
-}
-/* Dark theme switcher ends */
 /* Navbar ends */
 
 /* Hero section starts */
@@ -272,8 +231,8 @@ iframe {
 /* About section start*/
 .about {
   position: relative;
-  background: url("../images/jab-transformed.png") no-repeat top center/cover;
-  height: 600px;
+  background: url("../images/boxing-ring.jpg") no-repeat top center/cover;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -293,11 +252,24 @@ iframe {
 
 .about h3 {
   text-shadow: 2px 2px 2px #333;
+  color: #fff;
 }
 
 .about p {
   text-shadow: 2px 2px 2px #333;
+  color: #fff;
   font-size: 1.8rem;
+}
+.team{
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.audio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* About section ends */
 
@@ -357,7 +329,7 @@ iframe {
 
 /* Stakeholders ends */
 
-/* Subscription form starts */
+/* Search form starts */
 .sub {
   margin-top: 2rem;
   height: 10vh;
@@ -417,19 +389,6 @@ footer {
   padding: 2rem;
 }
 
-/* Scroll to top button starts */
-.scroll-up {
-  position: fixed;
-  right: 0.5%;
-  bottom: 3%;
-  cursor: pointer;
-}
-
-.up-arrow {
-  width: 3rem;
-  height: 3rem;
-}
-/* Scroll to top button ends */
 
 @media screen and (max-width: 768px) {
   .hamburger {

@@ -46,24 +46,32 @@ $(function(){
   <body>
 
     <!-- Header Seaction -->
-    <div id="nav"></div>
+    <div id="nav" role="navigation" aria-label="header"></div>
 
-    <!-- About section -->
-    <section class="about" id="about">
-      <h3>Watch the Jabs</h3>
-      <p>
-        Our primary objective is to bring live boxing matches to fans all around
-        the world
-      </p>
-
-      <h3>Its not About the Fights Alone!</h3>
-      <p>
-        We also air documentaries specially made for the greats, lifestyle of
-        boxers, news, and more.
-      </p>
-    </section>
+    <!-- Contact US section -->
+    <div  role="main" aria-label="Contact Us">
+      <section class="sub" id="sub">
+        <h3>Subscribe to our newsletter for updates</h3>
+        <form action="#">
+          <input
+            type="email"
+            name="email"
+            id="email-sub"
+            class="email-sub"
+            aria-label="Enter your email for subscription"
+            required
+          />
+          <input
+            type="submit"
+            value="Subscribe"
+            id="submit-btn"
+            class="submit-btn"
+          />
+        </form>
+      </section>
+    </div>
     <!-- Footer Section -->
-    <div id="footer"></div>
+    <div id="footer" role="contentinfo" aria-label="footer"></div>
 
     <!-- Web page script -->
     <script src="assets/js/app.js"></script>

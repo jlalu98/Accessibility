@@ -46,24 +46,48 @@ $(function(){
   <body>
 
     <!-- Header Seaction -->
-    <div id="nav"></div>
+    <div id="nav" role="navigation" aria-label="header"></div>
     
     <!-- About section -->
-    <section class="about" id="about">
+    <div  role="main" >
+    <section class="about" id="about" aria-label="About Us">
       <h3>Watch the Jabs</h3>
       <p>
         Our primary objective is to bring live boxing matches to fans all around
         the world
       </p>
-
-      <h3>Its not About the Fights Alone!</h3>
-      <p>
-        We also air documentaries specially made for the greats, lifestyle of
-        boxers, news, and more.
-      </p>
     </section>
+    <!-- Our Team -->
+    <section class="people" id="stakeholders">
+      <h3 class="team">Our Team</h3>
+      <div class="stakeholders">
+        <div class="persons">
+          <div class="person-1">
+            <img src="assets/images/john.jpg" alt="John Doe" />
+            <p class="name">John Doe</p>
+            <p class="role">john.doe@boxtv.com</p>
+          </div>
+          <div class="person-2">
+            <img src="assets/images/jane.jpg" alt="Jane Doe" />
+            <p class="name">Jane Doe</p>
+            <p class="role">jane.doe@boxtv.com</p>
+          </div>
+          <div class="person-3">
+            <img src="assets/images/jnr.jpg" alt="John Doe Jnr" />
+            <p class="name">John Doe JNR</p>
+            <p class="role">john.jnr@boxtv.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="audio">
+    <audio controls  aria-label="Boxing ring audio Player">
+      <source src="./assets/VCGFMLY-boxing-club.mp3" type="audio/mp3">
+  </audio>
+</section>
+  </div>
     <!-- Footer Section -->
-    <div id="footer"></div>
+    <div id="footer" role="contentinfo" aria-label="footer"></div>
 
     <!-- Web page script -->
     <script src="assets/js/app.js"></script>
